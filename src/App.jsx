@@ -1,14 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import React, { useState } from "react";
 import BookList from "./components/BookList";
+import BookSearch from "./components/BookSearch";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [bookList, setBookList] = useState([]);
+
+  const handleAddBook = (book) => {
+    // Check if the book is already in the bookList before adding
+    if (!bookList.some((b) => b.id === book.id)) {
+      setBookList([...bookList, book]);
+    }
+  };
 
   return (
     <>
-      <BookList />
+      <BookSearch handleAddBook={handleAddBook} />
+      <BookList bookList={bookList} />
     </>
   );
 }
