@@ -53,8 +53,8 @@ We welcome contributions! To contribute to this project:
 
 ## Credits
 
-- Authors: [@yourusername](https://github.com/dariocostaalves)
-- Libraries/Frameworks used: React, Vite, Tailwind CSS
+- Authors: [@dariocostaalves](https://github.com/dariocostaalves)
+- Libraries/Frameworks used: React, NodeJS, Vite, Tailwind CSS
 
 ## License
 
