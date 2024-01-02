@@ -16,8 +16,8 @@ app.listen(PORT, () => {
 
 app.get('/books', (req, res) => {
     const books = [
-      { id: 1, title: 'Book 1', author: 'Author 1' },
-      { id: 2, title: 'Book 2', author: 'Author 2' },
+      { id: 1, title: 'Harry Potter and the Order of the Phoenix', author: 'J.K ROWLING' },
+      { id: 2, title: 'Harry Potther and the prisioner of Azkabhan', author: 'J.K ROWLING' },
       // Add more book objects as needed
     ];
     res.json(books);
