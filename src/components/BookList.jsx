@@ -11,14 +11,12 @@ const BookList = () => {
       .catch((error) => console.error("Error fetching books: ", error));
   }, []);
   return (
-    <>
-      <h1>Books</h1>
-      <ul>
-        {books.map((book) => (
-          <BookItem key={book.id} book={book}></BookItem>
-        ))}
-      </ul>
-    </>
+    <div className="max-w-xl mx-auto">
+      <h2 className="text-3xl font-bold mb-4">List of Books</h2>
+      {books.map((book) => (
+        <BookItem key={book.id} book={book} />
+      ))}
+    </div>
   );
 };
 
