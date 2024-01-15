@@ -45,7 +45,10 @@ const BookSearch = ({ handleAddBook }) => {
         onChange={handleInputChange}
       />
       {showAutocomplete && (
-        <div className="mt-2 w-64 bg-white border border-gray-300 shadow-lg rounded">
+        <div
+          className="mt-2 w-64 bg-white border border-gray-300 shadow-lg rounded absolute"
+          style={{ top: "2.5rem" }}
+        >
           {searchResults
             .filter((book) =>
               book.title.toLowerCase().includes(searchQuery.toLowerCase())
